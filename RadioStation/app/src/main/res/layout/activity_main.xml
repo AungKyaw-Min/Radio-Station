@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6F7"
+    android:clickable="true"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:stretchColumns="@string/app_name"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <SeekBar
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg2"
+            android:max="400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.379" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:switchMinWidth="30dp"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="AM"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textOff="AM"
+            android:textOn="FM"
+            android:textStyle="bold|italic"
+            android:thumbTint="#FF0000"
+            android:trackTint="#000E19" />
+
+        <ImageView
+            android:id="@+id/radioImage"
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/launch" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/radioName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now Playing"
+            android:textAlignment="center"
+            android:textColor="#0A0000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:layout_conversion_absoluteHeight="47dp"
+            tools:layout_editor_absoluteY="286dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_conversion_absoluteWidth="731dp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+    </WebView>
+    <!--TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/webView"/>
+    </TableRow-->
+</LinearLayout>
