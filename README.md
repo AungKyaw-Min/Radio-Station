@@ -1,5 +1,5 @@
 # Radio Station
-An online radio application in which contains most AM/ FM channels and just by a click of a button, you listen it live.
+An online radio application in which contains most AM/ FM channels. You can choose your favorite channel and just by a click of a button, you listen it live.
 
 ## AM radio
 ![AM-radio](am.JPG) 
